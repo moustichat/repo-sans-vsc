@@ -12,7 +12,7 @@ h1 {
     border-radius: 10px;
 }
 
-ul {
+nav ul {
     margin-top: 200px;
     display: flex;
     align-content: space-around;
@@ -20,7 +20,7 @@ ul {
     gap: 3rem;
 }
 
-li {
+nav li {
     height: 5rem;
     padding: 0;
     background-color: rgb(205, 193, 255, 0.2);
@@ -34,7 +34,7 @@ li {
     justify-content: center;
 }
 
-li a {
+nav li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,21 +45,11 @@ li a {
     color: inherit;
 }
 
-div {
-    width: 100px;
-    margin: 10px;
-    margin-left: 0;
-    padding: 10px;
-
-    text-align: center;
-    border-radius: 3px;
-    background-color: lightslategrey;
-}
 
 #accueil {
     background-color: rgb(175, 164, 244);
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     position: absolute;
     right: 0;
     top: 0;
@@ -68,6 +58,7 @@ div {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-radius: 2px;
 }
 
 #accueil .line {
@@ -82,38 +73,48 @@ div {
 #dropdown-menu {
     display: none;
     position: absolute;
-    top: 60px; /* Adjusted to ensure visibility */
+    top: 70px;
     right: 20px;
     background-color: white;
-    border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
 }
 
 #dropdown-menu.show {
     display: block;
 }
 
-#dropdown-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-}
 
 #dropdown-menu li {
     padding: 10px;
-    text-align: center;
+    margin: 10px;
+}
+
+#dropdown-menu .trait {
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(162, 148, 249);
+}
+
+#last_opt {
+    border-bottom: none;
 }
 
 #dropdown-menu li a {
     text-decoration: none;
     color: black;
-    display: block;
+    width: 70%;
 }
 
 #dropdown-menu li a:hover {
-    background-color: #f0f0f0;
+    background-color: goldenrod;
 }
 
 section p {
