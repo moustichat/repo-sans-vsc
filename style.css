@@ -117,6 +117,18 @@ nav li a {
     background-color: goldenrod;
 }
 
-section p {
+section {
+    width: 100%;
+}
+
+.grand_trait {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(162, 148, 249);
+    border-radius: 1px;
+    margin: 6rem auto
+}
+
+h2 {
     text-align: center;
 }
