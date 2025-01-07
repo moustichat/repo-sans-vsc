@@ -22,19 +22,25 @@ ul {
 
 li {
     height: 5rem;
-    padding: 20px;
+    padding: 0;
     background-color: rgb(205, 193, 255, 0.2);
     font-size: x-large;
-    flex:1;
+    flex: 1;
     text-align: center;
     border: solid 1px rgb(205, 193, 255, 0.5);
     border-radius: 5px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
-a {
+li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
     text-decoration: none;
     color: inherit;
 }
@@ -51,14 +57,28 @@ div {
 }
 
 #accueil {
-    background-color: rgb(162, 148, 249);
-    width:50px;
-    height: 50px;
+    background-color: rgb(175, 164, 244);
+    width: 40px;
+    height: 40px;
     position: absolute;
     right: 0;
     top: 0;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#accueil .line {
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    height: 7px;
+    background-color: rgb(137, 120, 250);
+    border-radius: 2px;
+}
+
 section p {
     text-align: center;
 }
