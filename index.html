@@ -54,6 +54,7 @@
         </ul>
     </nav>
 
+
     <div class="grand_trait"></div>
 
     <section id="about">
@@ -61,6 +62,7 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+    </section>
 
     <div class="grand_trait"></div>
 
@@ -69,6 +71,7 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+    </section>
 
     <div class="grand_trait"></div>
 
@@ -77,6 +80,7 @@
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+    </section>
 
     <div class="grand_trait"></div>
 
@@ -122,9 +126,89 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+    </section>
 
+    
+
+
+
+    <style>
+        table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+    </style>
+
+<input id="person" type ="text" placeholder="person">
+<input id="interest" type="text" placeholder="interest">
+<input id = "age" type="number" placeholder="age">
+
+<input type = "submit" onclick="tabl()" value="Ajouter">
+<input type = "submit" onclick="supp()" value="Tout supprimer">
+<input type = "submit" onclick="supp1()" value="Supprimer 1 élément">
+
+    <table style="margin-top: 50px;">
+        <caption>
+          Front-end web developer course 2021
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Person</th>
+            <th scope="col">Most interest in</th>
+            <th scope="col">Age</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Average age</th>
+            <td id = "avg"></td>
+          </tr>
+        </tfoot>
+      </table>
+
+
+
+      
+      
+    <div style="height: 400px;"></div>
 
 </body>
 </html>
