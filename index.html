@@ -8,16 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script>
-        function toggleMenu() {
-            const dropdown = document.getElementById('dropdown-menu');
-            dropdown.classList.toggle('show');
-        }
-    </script>
+    <script src = "script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Thibalt MENU</h1>
+        <h1 id = "home">Thibalt MENU</h1>
     </header>
 
     <section>
@@ -28,24 +23,26 @@
         </p>
     </section>
 
-    <div id="accueil" onclick="toggleMenu()">
+    <div id="menu" onclick="toggleMenu()">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
 
     <ul id="dropdown-menu" class="dropdown-menu">
-            <li><a href="#about">A propos</a></li>
-            <li class = "trait"></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li class = "trait"></li>
-            <li><a href="#projects">Projets</a></li>
-            <li class = "trait"></li>
-            <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Accueil</a></li>
+        <li class = "trait"></li>
+        <li><a href="#about">A propos</a></li>
+        <li class = "trait"></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li class = "trait"></li>
+        <li><a href="#projects">Projets</a></li>
+        <li class = "trait"></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
     <!-- Changer la couleur du hover + le hover prend seulemebt le texte, prendre toute la largeur -->
      <!-- baisser le premier trait pour qu'on le voit pas si on descend pas à la molette -->
-      <!-- rajouter un bouton home pour remonter tout en haut dans le dropdown menu -->
+      <!-- ajouter photo -->
     
 
     <nav>

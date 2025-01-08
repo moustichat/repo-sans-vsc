@@ -49,7 +49,7 @@ nav li a {
 }
 
 
-#accueil {
+#menu {
     background-color: rgb(175, 164, 244);
     width: 45px;
     height: 45px;
@@ -64,7 +64,7 @@ nav li a {
     border-radius: 2px;
 }
 
-#accueil .line {
+#menu .line {
     margin: 0;
     padding: 0;
     width: 35px;
