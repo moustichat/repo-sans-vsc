@@ -1,17 +1,22 @@
 body {
     background-color: rgb(229, 217, 242);
     font-family: 'raleway', Arial, sans-serif;
+    color: rgb(46, 16, 50);
 }
 
-h1 {
+header {
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
     margin: 2rem;
     background-color: rgb(162, 148, 249, 0.3);
     border: solid 1px rgb(162, 148, 249, 0.5);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: rgb(46, 16, 50);
 }
 
 nav ul {
